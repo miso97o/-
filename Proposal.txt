@@ -1,0 +1,59 @@
+1. Project Overview
+  - State the problem to be solved and briefly discuss the algorithms, system structure, and other related issues to resolve the problem 
+
+- 챗봇(가명 : 홍익이)이 주선해주는 소개팅
+- 홍익이와 대화를 통해 상대방을 추천받고 상대에 대해 물어볼 수 있음
+- 외모만 추구하지 않고 재미를 위해 사용자의 사진을 카툰화해서 제공
+
+2. Background and Motivations
+  - the reason you chose the problem (is it worthy?)
+  - present related studies(papers, produce, prototypes, ...) and compare them with your idea/approach
+
+- 외모로 상대를 판단하는 기존 소개팅 앱과 다르게 카툰화로 외모에 대한 의존도를 낮춘다.
+- 챗봇과 대화를 통해 소개팅의 어색한 분위기를 완화시킨다.
+
+3. Component Technologies
+  - describe component technologies in detail for implementing your approach/idea to solve the problem
+  - existing algorithm, system to be used
+  - your original algorithm, product to be used
+
+- 자연어 처리 기술을 활용해서 사용자의 요구사항을 파악하고 그에 맞는 대답을 해준다.
+- 카툰 필터링 기술을 활용해서 사용자의 사진을 수정한다.
+
+4. Detailed Design and Implementation
+  - describe the 4 parts below in detail
+
+  4.1 Requirement Analysis
+  - define/describe system requirements and analysis
+
+- 챗봇이 구어체를 사용하게 만든다.
+- 사전조사를 통해 본인과 잘 맞을 것 같은 상대를 추천해준다.
+- 카툰 필터링의 정도를 조절해서 원래 이미지를 유추할수 있게한다.
+
+  4.2 System Design (Synthesis and Analysis)
+    - overall structure, data and control flow, data structures and algorithms, user interface,
+      interface to DBMS, …
+
+- 처음 회원가입시에 몇가지 정보를 얻기위해 테스트를 진행한다.
+- 홍익이에게 소개를 요청하고 상대방을 추천받는다.
+- 상대방과 대화 전과 대화 중에 홍익이에게 상대방에 대한 정보를 물어볼수 있다.
+
+  4.3 Development Environment
+  - OS, programming languages, software, tools, IDE, …
+
+- 구글의 Dialogflow와 파이썬을 이용해 자연어처리를 하는 챗봇을 만든다.
+- CartoonGAN을 이용해 사용자의 사진을 카툰화 한다.
+- React Native와 Node.js를 이용해 앱을 만든다.
+
+  4.4 Test and Demonstration Plan 
+  - describe your plan on module and system integration tests
+  - present demonstration scenarios in detail
+
+-Each time a function is implemented, it tests itself.
+-Gather a few users and have them try it out and review the requirements and others.
+
+5. Team
+ - member1: mission
+ - member2: mission
+ 
+
